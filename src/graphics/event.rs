@@ -11,7 +11,7 @@ impl Window {
                 | Event::KeyDown {
                     keycode: Some(Keycode::Escape),
                     ..
-                } => {self.running = false},
+                } => self.running = false,
                 Event::Window {
                     timestamp: _,
                     window_id: _,
@@ -83,10 +83,13 @@ impl Window {
                     precise_x,
                     precise_y,
                     mouse_x,
-                    mouse_y
-                } => println!("Mouse wheel: {x}, {y}; Precise: {precise_x}, {precise_y}; Wheel direction: {direction:?}"),
+                    mouse_y,
+                } => println!(
+                    "Mouse wheel: {x}, {y}; Precise: {precise_x}, {precise_y}; Wheel direction: {direction:?}"
+                ),
                 _ => {}
             }
         }
     }
 }
+
