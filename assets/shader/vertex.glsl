@@ -1,4 +1,5 @@
 #version 330 core
+
 const int SHAPE_RECTANGLE = 0;
 const int SHAPE_CIRCLE = 1;
 const int SHAPE_IMAGE = 2;

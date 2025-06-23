@@ -1,8 +1,10 @@
-use crate::constants::*;
-use gl::types::*;
 use gl::NUM_SAMPLE_COUNTS;
+use gl::types::*;
+
 use image::DynamicImage;
 use image::GenericImageView;
+
+use crate::constants::*;
 
 pub struct Textures {
     pub tex_sprites: GLuint,
@@ -80,18 +82,14 @@ impl Textures {
             gl::BindTexture(gl::TEXTURE_2D, tex_shadow);
         }*/
 
-
-
         println!(
             "Textures:\n- Sprites: {}\n- Blocks: {}\n- Font: {}",
             tex_sprites, tex_blocks, tex_font
         );
 
         unsafe {
-            
             gl::BindTexture(gl::TEXTURE_2D, tex_sprites);
-            
-            
+
             gl::BindTexture(gl::TEXTURE_2D, tex_font);
         }
 

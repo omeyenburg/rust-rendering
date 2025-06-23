@@ -35,8 +35,7 @@ impl Window {
 
     pub fn draw_char(&mut self, rect: [f32; 4], c: char, color: [f32; 4]) {
         let char_id: f32 = self.font.get_index(c) as f32;
-        self.buffer
-            .add_instance([3.0, char_id], rect, color)
+        self.buffer.add_instance([3.0, char_id], rect, color)
     }
 
     pub fn draw_text(&mut self, center: [f32; 2], text: &str, size: f32, color: [f32; 4]) {

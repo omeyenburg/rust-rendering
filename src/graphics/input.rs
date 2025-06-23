@@ -1,3 +1,4 @@
 struct Input {
-    mouse_pos: [f32; 2]
+    mouse_pos: [f32; 2],
 }
+

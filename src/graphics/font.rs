@@ -1,5 +1,6 @@
-use crate::constants::*;
 use std::collections::HashMap;
+
+use crate::constants::*;
 
 pub struct Font {
     hashmap: HashMap<char, i32>,
