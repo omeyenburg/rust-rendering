@@ -5,3 +5,6 @@ edition = "2024"
 
 [dependencies]
 directories = "6.0.0"
+
+gl = "0.14.0"
+sdl2 = "0.37.0"
