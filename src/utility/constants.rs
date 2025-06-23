@@ -19,5 +19,9 @@ macro_rules! load_bytes {
 pub const VERTEX_SHADER_SOURCE: &str = load_str!("assets/shader/vertex.glsl");
 pub const FRAGMENT_SHADER_SOURCE: &str = load_str!("assets/shader/fragment.glsl");
 
-// Images
-pub const IMAGE_SPRITES: &[u8] = load_bytes!("assets/icon/icon.png");
+// Sprites
+pub const SPRITES_IMAGE: &[u8] = load_bytes!("assets/icon/icon.png");
+
+// Font
+pub const FONT_IMAGE: &[u8] = load_bytes!("assets/font/font.png"); 
+pub const FONT_DATA: &str = load_str!("assets/font/font.txt");
