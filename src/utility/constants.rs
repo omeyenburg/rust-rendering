@@ -20,4 +20,4 @@ pub const VERTEX_SHADER_SOURCE: &str = load_str!("assets/shader/vertex.glsl");
 pub const FRAGMENT_SHADER_SOURCE: &str = load_str!("assets/shader/fragment.glsl");
 
 // Images
-pub const IMAGE_TEST: &[u8] = load_bytes!("assets/icon/icon.png");
+pub const IMAGE_SPRITES: &[u8] = load_bytes!("assets/icon/icon.png");
